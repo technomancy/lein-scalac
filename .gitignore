@@ -1,0 +1,7 @@
+pom.xml
+*jar
+/lib/
+/classes/
+.lein-deps-sum
+/.lein-plugins/checksum
+/test-project/.lein-plugins/checksum
