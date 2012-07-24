@@ -1,8 +1,10 @@
 (defproject test-project "0.1.0"
   :description "test project with some scala"
-  :dependencies [[org.clojure/clojure "1.3.0"]
+  :dependencies [[org.clojure/clojure "1.4.0"]
                  [org.scala-lang/scala-library "2.9.1"]]
+  :scala-source-path "scala"
   :plugins [[lein-scalac "0.1.0"]]
-  :hooks [leiningen.hooks.scalac]
-  :source-path "src/clj"
-  :scala-source-path "src/scala")
+  :prep-tasks ["scalac"]
+  ;; for Leiningen 1.x you need this instead:
+  ;; :hooks [leiningen.hooks.scalac]
+  :main test-project.core)
