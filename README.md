@@ -18,6 +18,11 @@ to `project.clj`
 For Leiningen 1.x support, need to add `leiningen.hooks.scalac` to
 `:hooks` in project.clj.
 
+If you need runtime features of Scala you'll have to declare a
+dependency on `scala-library` like so:
+
+`:dependencies [org.scala-lang/scala-library "2.9.1"]`
+
 ## License
 
 Copyright © 2012 Phil Hagelberg and Scott Clasen
